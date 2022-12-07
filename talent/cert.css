@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-image: url('../RESOURCES/bg_cert_talent.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap:20px;
+    
+}
+.wrapper{
+    display: grid;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+
+}
+.cert{
+    display: flex;
+    justify-content: flex-start;
+}
+.cert_contain{
+    gap:50px;
+    display: flex;
+    background-color: #30383e;
+    padding:20px;
+    border-radius: 5px;
+}
+.work{
+    display: flex;
+    justify-content: flex-start;
+}
+.work .labeling{
+    display: grid;
+    place-content: center;
+    gap:10px;
+}
+.imahe{
+    display: grid;
+    place-content: center;
+}
+.cert_contain p{
+    color: white;
+}
+.contain{
+    display: grid;
+    place-content: center;
+}
+.testimonials{
+    display: flex;
+    justify-content: flex-start;
+}
+.testimonials .labeling{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/*button up*/
+.download-button {
+    position: relative;
+    border-width: 0;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 4px;
+    z-index: 1;
+   }
+   
+   .download-button .docs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    min-height: 40px;
+    padding: 0 10px;
+    border-radius: 4px;
+    z-index: 1;
+    background-color: #fbaf03;
+    transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
+   }
+   
+   .download-button:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+   }
+   
+   .download {
+    cursor: pointer;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+    margin: 0 auto;
+    z-index: -1;
+    border-radius: 4px;
+    transform: translateY(0%);
+    background-color: #01e056;
+    border: solid 1px #01e0572d;
+    transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
+   }
+   
+   .download-button:hover .download {
+    transform: translateY(100%)
+   }
+   
+   .download svg polyline,.download svg line {
+    animation: docs 1s infinite;
+   }
+   
+   @keyframes docs {
+    0% {
+     transform: translateY(0%);
+    }
+   
+    50% {
+     transform: translateY(-15%);
+    }
+   
+    100% {
+     transform: translateY(0%);
+    }
+   }
+/*inout*/
+
+/*input sec*/
+.input-group {
+    position: relative;
+    }
+    
+    .input {
+    
+    border: solid 1.5px #ffffff;
+    border-radius: 5px;
+    background: none;
+    padding: 1rem;
+    font-size: 1rem;
+    color: #f5f5f5;
+    transition: border 150ms cubic-bezier(0.4,0,0.2,1);
+    
+    }
+    
+    .user-label {
+    position: absolute;
+    left: 15px;
+    color: #e8e8e8;
+    pointer-events: none;
+    transform: translateY(1rem);
+    transition: 150ms cubic-bezier(0.4,0,0.2,1);
+    }
+    
+    .input:focus, input:valid {
+    outline: none;
+    border: 2.5px solid #fbaf03;
+    }
+    
+    .input:focus ~ label, input:valid ~ label {
+    transform: translateY(-50%) scale(0.8);
+    background-color: #30383e;
+    padding: 0 .2em;
+    font-weight: 700;
+    color: #fbaf03;
+    }
+
+    .btn_back{
+        border: none;
+        border-radius: 5px;
+        height: 50px;
+        color: white;
+        width: 700px;
+        cursor: pointer;
+        background: #ffffff49;
+      }
+      .btn_nxt{
+        cursor: pointer;
+        border-radius: 5px;
+        height: 50px;
+        border:none;
+        color: white;
+        width: 700px;
+        background: #fbaf03;
+      }
+      .btn_nxt:hover{
+        transform: translateY(-5px);
+        transition: 0.5s;
+      }
+      .btn_back:hover{
+        transform: translateY(-5px);
+        transition: 0.5s;
+      }
+      .btn{
+        display: flex;
+        flex-direction: column;
+        gap:10px;
+    
+    
+      }
+      .btn a{
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 500;
+        color: white;
+      }

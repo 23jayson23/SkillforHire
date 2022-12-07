@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClientForm</title>
+    <link rel="stylesheet" href="formdesign.css">
+</head>
+<body>
+<div class="line-container">
+    <svg viewBox="0 0 11 2977" fill="none" preserveAspectRatio="xMidYMax meet">
+        <path d="M5.5 0.5V2977" stroke="#FBAF03" stroke-width="10"/>
+    </svg>
+</div>
+<section class="one">
+    <h1 class="scroll" data-rate=".2" data-direction="vertical">Ocean Stuff</h1>
+</section>
+
+<section class="two">
+    <h1 class="scroll" data-rate=".2" data-direction="vertical">Ocean Stuff</h1>
+    <p>big watermark</p>
+</section>
+<section class="three">
+    <h1 class="scroll" data-rate=".2" data-direction="vertical">Ocean Stuff</h1>
+    <p>big watermark</p>
+</section>
+<section class="four">
+    <h1 class="scroll" data-rate=".2" data-direction="vertical">Ocean Stuff</h1>
+    <p>big watermark</p>
+</section>
+<script>
+    let path = document.querySelector('path')
+    let pathLength = path.getTotalLength()
+
+    path.style.strokeDasharray = pathLength + ' ' + pathLength;
+
+    path.style.strokeDashoffset = pathLength;
+
+    window.addEventListener('scroll', () => {
+
+        var scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+
+        var drawLength = pathLength * scrollPercentage;
+
+        path.style.strokeDashoffset = pathLength - drawLength;
+    
+        const target = document.querySelectorAll('.scroll');
+
+        var index = 0, length = target.length;
+        for(index; index < length; index++){
+            var pos = window.pageYOffset * target[index].dataset.rate;
+
+            if(target[index].dataset.direction === 'vertical'){
+                target[index].style.transform = 'translate3d(0px,'+pos+'px, 0px)';
+            } else{
+                var posX = window.pageYOffset * target[index].dataset.ratex;
+                var posY = window.pageYOffset * target[index].dataset.ratey;
+
+                target[index].style.transform = 'translate3d('+posX+'px, '+posY+'px, 0px)';
+            }
+        }
+    })
+
+</script>
+</body>
+</html>

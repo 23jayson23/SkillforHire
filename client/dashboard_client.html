@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="dashboard_client.css">
+    <link rel="shortcut icon" type="x-icon" href="../RESOURCES/center_logo.png">
+</head>
+<body>
+    <div id="loading"></div>
+        
+<div class="navcointainer">
+    <div class="navbar">
+        <img src="../RESOURCES/up_logo.png" width="200px" style="margin-left:40px;">
+        <nav>
+            <ul>
+                <li><a href="../home.html">Home </a></li>
+                <li><a href="">Message</a></li>
+                <li><a href="">Find Talent</a></li>
+                <li><a href="">Find Client</a></li>
+            </ul>
+        </nav>
+            <table>
+                <td width="30px"></td>
+            </table>
+            <div class="drop" style="float: right;">
+                <img src="../RESOURCES/profblank.jpeg" width="50px" style="border-radius: 50%;">
+                <div class="drp-down">
+                    <span><a href="client/dashboard_client.html">Profile</a><img src="../RESOURCES/account.png" width="50px"></span>
+                    <span><a href="../index.html">Log Out</a><img src="../RESOURCES/logout.png" width="50px"></span>
+                    
+                </div>
+            </div>
+    </div>
+</div>
+<img src="../RESOURCES/bg_header.jpg" width="100%" style="z-index: -1; position:absolute; transform: translateY(-530px);">
+<img src="../RESOURCES/NEW WAVE1.png" width="100%" style="z-index: -1; position:absolute;transform: translateY(-30px); ">
+<div class="container">
+    <div class="profile" >
+        <center>
+        <div class="parent" style="margin-top:50px ;">
+            <div class="prof" >
+                <img src="../RESOURCES/profblank.jpeg" width="200px" style="border-radius: 50%;">
+                <p style="font-weight: 800; font-size:30px;" contenteditable="TRUE">renz renuel</p>
+                <p style="font-weight: 400; font-size:15px;">renzrenuel@gmail.com</p>
+            </div>
+            <br>
+
+            <div class="dashboard" style="display: flex; gap:30px; align-items:center;justify-content:center;">
+                <div class="contain-graph">
+                    <div class="pie animate" style="--p:30;--c:#fbaf03; font-weight: 800; font-size:30px;"> 30%</div><br><br>
+                    <span style="font-weight: 400; font-size:15px; ">Skills</span>
+                </div>
+                <div class="contain-graph">
+                    <div class="pie animate" style="--p:70;--c:#fbaf03; font-weight: 800; font-size:30px;"> 70%</div><br><br>
+                    <span style="font-weight: 400; font-size:15px; ">Knowledge</span>
+                </div>
+                <div class="contain-graph">
+                    <div class="pie animate" style="--p:50;--c:#fbaf03; font-weight: 800; font-size:30px;"> 50%</div><br><br>
+                    <span style="font-weight: 400; font-size:15px; ">Paying</span>
+                </div>
+                <div class="contain-graph">
+                    <div class="pie animate" style="--p:40;--c:#fbaf03; font-weight: 800; font-size:30px;"> 40%</div><br><br>
+                    <span style="font-weight: 400; font-size:15px; ">Talent</span>
+                </div>
+            </div>
+        </div>
+    </center>
+    </div>
+    
+    <div class="post-job">
+        <br><br>
+        <div class="parent-job">
+            <p style="font-weight: 800; font-size:30px;">Your Posting</p>
+        <img src="../RESOURCES/jobs_uploud.png" width="200px">
+        <p style="font-weight: 800; font-size:30px; color:#fbaf03">No Active Job Post</p>
+        <p>Post a job to the marketplace and let talent come to you</p>
+        <br><button type="button"><a href="headline.html">Post Job</button></a>
+        </div>
+        
+        
+    </div>
+    <div class="complete-task">
+        <p style="font-weight: 800; font-size: 30px;">Complete Task</p>
+    <div class="task-info">
+
+    </div>
+    </div>
+    <div class="info">
+        <center>
+        <p style="font-weight: 800; font-size:30px; color:#fbaf03;">How to work with talent</p>
+        <p>Connect with a talent community that numbers in the millions, fast and at no cost.</p>
+        <br><br>
+    </center>
+        <div class="card-animation-cont">
+            <!-- Duplicate the following div to add cards -->
+            <div data-aos="fade-up"  data-aos-duration="100">
+            <div class="card">
+                <img src="../RESOURCES/1.png" alt="">
+                <div class="info">
+                    <strong style="color: #fbaf03;">POST A JOB</strong>
+                    <span class="sub-title">to the marketplace</span>
+                    <hr>
+                    <div class="hide-info">
+                        <span class="text">Provide enough detail for great talent to figure out if the work is right for them.<br><br>(You can always edit your post, or send an invite to reach out the people directly.)<br>
+                            <a href="#">Learn More</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            </div>
+        <div data-aos="fade-up"  data-aos-duration="200">
+            <div class="card">
+                <img src="../RESOURCES/2.png" alt="">
+                <div class="info">
+                    <strong style="color:#fbaf03;">GET PROPOSALS</strong>
+                    <span class="sub-title">from talent</span>
+                    <hr>
+                    <div class="hide-info">
+                        <span class="text">A strong working relationship starts with open communication. Here's your chance to ask about experience, set expectation for what you need, and discuss terms of the work.<br>
+                            <a href="#">Learn More</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div data-aos="fade-up"  data-aos-duration="300">
+            <div class="card">
+                <img src="../RESOURCES/3.png" alt="">
+                <div class="info">
+                    <strong style="color:#fbaf03;">START WORKING</strong>
+                    <span class="sub-title">together</span>
+                    <hr>
+                    <div class="hide-info">
+                        <span class="text">Once you both agree on terms, collaborate with simple and secure tools like chat,file sharing, and time tracking.<br>
+                            <a href="#">Learn More</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-aos="fade-up"  data-aos-duration="400">
+            <div class="card">
+                <img src="../RESOURCES/4.png" alt="">
+                <div class="info">
+                    <strong style="color:#fbaf03;">PAY</strong>
+                    <span class="sub-title">for work you approve</span>
+                    <hr>
+                    <div class="hide-info">
+                        <span class="text">Reports are useful for keeping track of payment and reviewing work. As you camplete jobs, you can build trusting relationship with talent in a way that helps you both grow.<br>
+                            <a href="#">Learn More</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+ 
+    </div>
+</div>
+
+<div class="footer">
+    <table>
+        <td>
+            <table width="300px" style="color: white; margin-left: 30px;">
+            <tr>
+                <td>
+                    <img src="../RESOURCES/up_logo.png">
+                    <p style="font-size: 12px; margin-left:15px ;"> Skill for Hire is a platform for all person that will need  to find an extra income or even for the people wan't help their work to even the little bit of person</p>
+                    <div class="imahe" style="margin-top:10px;margin-left:15px;">
+                        <img src="../RESOURCES/facebook.png" width="30px">&nbsp;&nbsp;
+                        <img src="../RESOURCES/pinterest.png" width="30px">&nbsp;&nbsp;
+                        <img src="../RESOURCES/instagram.png" width="30px">&nbsp;&nbsp;
+                        <img src="../RESOURCES/discord.png" width="30">
+                    </div>
+                </td>
+            </tr>
+           
+            </table>
+        </td>
+        <td>
+            <table width="200px" style="color:white; margin-top: -20px; margin-left: 100px;">
+                <tr>
+                    <td><p style="color:#fbaf03; font-weight:800;">Skills</p></td>
+                </tr>
+                <tr>
+                    <td><a href="" class="footbt">Designer</a></td>
+                </tr>
+                <tr>
+                    <td><a href="" class="footbt">Tutor</a></td>
+                </tr>
+                <tr>
+                    <td><a href="" class="footbt">Guitarist</a></td>
+                </tr>
+                <tr>
+                    <td><a href="" class="footbt">Web Developer</a></td>
+                </tr>
+                <tr>
+                    <td><a href="" class="footbt">Virtual Assistant</a></td>
+                </tr>
+            </table>
+        </td>
+        <td>
+            <table width="200px" style="color:white; margin-top: -20px; margin-left: 20px;">
+                <tr>
+                    <td><p style="color:#fbaf03; font-weight:800;">Partnership</p></td>
+                </tr>
+                <tr>
+                    <td><a href="" class="footbt">Big Company</a></td>
+                </tr>
+                <tr>
+                    <td><a href="" class="footbt">Ayala</a></td>
+                </tr>
+                <tr>
+                    <td><a href="" class="footbt">Converge</a></td>
+                </tr>
+                <tr>
+                    <td><a href="" class="footbt">Pldt</a></td>
+                </tr>
+                <tr>
+                    <td><a href="" class="footbt">Accenture</a></td>
+                </tr>
+            </table>
+        </td>
+        <td>
+            <table width="200px" style="color:white; margin-top: -20px; margin-left: 20px;">
+                <tr>
+                    <td><p style="color:#fbaf03; font-weight:800;">Certificate</p></td>
+                </tr>
+                <tr>
+                    <td><a href="" class="footbt">Google</a></td>
+                </tr>
+                <tr>
+                    <td><a href="" class="footbt">Stack League</a></td>
+                </tr>
+                <tr>
+                    <td><a href="" class="footbt">Canada Seal</a></td>
+                </tr>
+                <tr>
+                    <td><a href="" class="footbt">Microsoft</a></td>
+                </tr>
+                <tr>
+                    <td><a href="" class="footbt">Linux</a></td>
+                </tr>
+            </table>
+        </td>
+        <td>
+            <table width="200px" style="color:white; margin-top: -20px; margin-left: 20px;">
+                <tr>
+                    <td><p style="color:#fbaf03; font-weight:800;">Customer Service</p></td>
+                </tr>
+                <tr>
+                    <td><a href="" class="footbt">Mesosi</a></td>
+                </tr>
+                <tr>
+                    <td><a href="" class="footbt">Indianuo</a></td>
+                </tr>
+                <tr>
+                    <td><a href="" class="footbt">Makino City</a></td>
+                </tr>
+                <tr>
+                    <td><a href="" class="footbt">Stick Breaker</a></td>
+                </tr>
+                <tr>
+                    <td><a href="" class="footbt">Accenture</a></td>
+                </tr>
+            </table>
+        </td>
+    </table>
+</div>
+<script>
+    AOS.init();
+</script>
+<script>
+var loader = document.getElementById("loading");
+window.addEventListener("load", function(){
+    loader.style.display="none";
+})
+</script>
+</body>
+</html>

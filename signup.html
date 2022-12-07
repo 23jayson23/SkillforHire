@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="shortcut icon" type="x-icon" href="RESOURCES/center_logo.png">
+</head>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+   background-image: url('RESOURCES/bg_signup.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 100%;
+}
+.container{
+    color:white;
+    transform: translateY(50px);
+    margin-left: 100px;
+   
+}
+.input-cont {
+    position: relative;
+    width: 350px;
+    display: flex;
+    flex-flow: column-reverse;
+    justify-content: center;
+    border: 0;
+    cursor: text;
+    transition: .2s;
+}
+.input-cont input {
+    padding: 5px 1px;
+    font-size: 15px;
+    border: 0;
+    background-color: rgb(0, 0, 0, 0);
+    outline: 0;
+    font-size: 15px;
+    border-bottom: 1px solid rgb(120, 120, 120);
+    color: rgb(255, 255, 255, 1)
+}
+.input-cont input::-webkit-input-placeholder {
+    opacity: 0;
+}
+.input-cont input::-moz-placeholder {
+    color: transparent !important;
+}
+
+.input-cont::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: .3s;
+}
+.input-cont:focus-within::after {
+    transform: scaleX(1);
+    background-color: rgb(255, 255, 255) !important;
+}
+
+.input-cont input + label {
+    transform-origin: left;
+    color: rgb(120, 120, 120);
+    cursor: text;
+    font-size: 15px;
+    user-select: none;
+    transition: all 0.2s;
+}
+.input-cont input + label {
+    transform: translate(0, 120%) scale(1);
+}
+.input-cont input:not(:placeholder-shown) + label,
+.input-cont input:focus + label {
+    transform: translate(0, 20%) scale(.8);
+}
+.button {
+    background-color: #fbaf03;
+    border: none;
+    color:#ffffff;
+    border-radius:5px;
+    width: 326px;
+    padding:10px;
+    margin-top: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.button a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    
+}
+</style>
+<body>
+<div class="container">
+    <img src="RESOURCES/up_logo.png" width="300px" style="margin-left: -20px;">
+    <p style="font-size: 30px; font-weight: 900;">Create Your Account</p>
+    <p style="font-size: 15px; font-weight:300;">Let's Get Started with the 30 days Free Trial</p>
+    <div class="input-cont">
+        <input type="text" name="fullname" id="fullname" placeholder="Fullname" required>
+        <label for="fullname">Enter Username</label>
+    </div>
+        <div class="input-cont">
+        <input type="password"  id="password" placeholder="Fullname" required>
+    <label for="fullname">Create Password</label>
+    </div>
+        <div class="input-cont">
+        <input type="password"  id="password"placeholder="Fullname" required>
+    <label for="fullname">Enter Password</label>
+    </div>
+
+    <div class="button">
+        <a href="choice.html">Create Account</a>
+    </div>
+    <p style="font-size: 15px; margin-top: 10px;margin-left: 60px;">Do You Have Account?<a href="Signin.html" style="text-decoration: none; color:#fbaf03">&nbsp;&nbsp;Sign In</a></p>
+</div>
+</body>
+</html>

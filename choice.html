@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choice</title>
+    <link rel="shortcut icon" type="x-icon" href="../RESOURCES/center_logo.png">
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #0f181f;
+}
+.container{
+    display:flex;
+    justify-content: center;
+    gap:30px;
+}
+.cardLink {
+    display: inline-block;
+    position: relative;
+    border-radius: 10px;
+    background-color: #fbaf03;
+    width: 250px;
+    padding: 40px 20px;
+    transition: .2s;
+    gap:60px;
+    overflow: hidden;
+    user-select: none;
+    box-sizing: border-box;
+}
+.cardLink:hover {
+    background-color: #E8E2F7;
+}
+.cardLink:hover > a div {
+    opacity: 0;
+}
+.cardLink:hover > a span {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+    top: 50%;
+}
+
+.cardLink a {
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+}
+.cardLink a div {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    opacity: 1;
+    transition: .2s;
+}
+
+
+.cardLink strong {
+    font-size: 24px;
+    font-weight: 800;
+}
+.cardLink p {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 25px;
+}
+.cardLink span {
+    color: #fbaf03;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 42px;
+    opacity: 0;
+    transition: .2s;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+</style>
+<body>
+    <center>
+        <br><br>
+        <img src="RESOURCES/up_logo.png" width="400px">
+        <p style="color:white; font-weight:800; font-size:30px;"> What Are You Looking For?</p>
+        <br>
+        <div class="container">
+    <div class="cardLink">
+        <a href="client/headline.html">
+            <div>
+                <img src="RESOURCES/client.png" width="100px">
+                
+            </div>
+            <span>
+                <strong>Client</strong>
+                <p>Finding a person that help their task</p>
+            </span>
+        </a>
+    </div>
+    <div class="cardLink">
+        <a href="talent/personal.html">
+            <div>
+                <img src="RESOURCES/talent.png" width="100px">
+                
+            </div>
+            <span>
+                <strong>Talent</strong>
+                <p>A person havig skills and experience</p>
+            </span>
+        </a>
+    </div>
+
+</div>    
+<center></center>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget</title>
+    <link rel="shortcut icon" type="x-icon" href="../RESOURCES/center_logo.png">
+</head>
+<style>
+    
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+    body{
+   background-image: url('../RESOURCES/bg_pay.jpg');
+   background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.form_div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap:30px;
+}
+.hours{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap:20px;
+}
+.form_container span input{
+    border:solid 1px white;
+    background: transparent;
+    outline:none;
+    color: black;
+    border-radius: 5px;
+    width: 150px;
+    padding: 10px;
+   
+}
+.form-contain{
+    display:grid;
+    place-items: center;
+    justify-content: space-around;
+    gap:30px;
+}
+.form_container span input::before{
+    border:none;
+    background: white;
+    outline:none;
+    cursor:pointer;
+    color: black;
+}
+form{
+    width: 550px;
+    color:white;
+    padding: 20px;
+    background: rgba(255,255,255,0.1);
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+
+.btn_back{
+    border: solid 1px white;
+    border-radius: 10px;
+    height: 50px;
+    color: white;
+    width: 200px;
+    cursor: pointer;
+    background: transparent;
+  }
+  .btn_nxt{
+    cursor: pointer;
+    border-radius: 10px;
+    height: 50px;
+    border:none;
+    color: white;
+    width: 200px;
+    background: #fbaf03;
+  }
+  .btn{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+
+  }
+  .btn a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+  }
+</style>
+<body>
+    <div class="forms-body">
+        <div class="form_div">
+            <div></div>
+            <div class="form-contain">
+            <img src="../RESOURCES/bud.png" width="300px">
+            <p style="color:#fbaf03; font-size:30px; font-weight:800; text-align:center;">Budget</p>
+            <form>
+                <p style="font-size:30px; font-weight: 800; color:#fbaf03; text-align: center;">Hourly Rate</p>
+                <div class="hours">
+                    <div class="form_container">
+                        <img src="../RESOURCES/working.png" width="150px">
+                    </div>
+                    <div class="form_container">
+                        <span>
+                            <p>From : </p>
+                            <input type="text" placeholder="Php 500-800"><span>/Hours</span>
+                        </span>
+                        <span>
+                            <p>To : </p>
+                            <input type="text" placeholder="Php 500-800"><span>/Hours</span>
+                        </span>
+                    </div>
+                </div>
+                <p style="width:500px"> Professionals tend to charge Php 400.00 - Php 800.00 / hour (PHP) for graphic design project like yours Expert may charge higher rates</p>
+            </form>
+            <form >
+                <p style="font-size:30px; font-weight: 800; color:#fbaf03; text-align: center;">Project Budget</p>
+                    <div class="hours">
+                        <div class="form_container">
+                            <img src="../RESOURCES/project.png" width="150px">
+                        </div>
+                        <div class="form_container">
+                            <span>
+                                <p>Maximum project Budget : </p>
+                                <input type="text" class="proj">
+                            </span>
+                            <p style="width:300px;">You will have the option to create milestone which divide your project into manageable phases.</p>
+                        </div>
+                    </div>
+            </form>
+            <div class="btn">
+                <button type="button" class="btn_back"><a href="scope.html">Back</a></button>
+                <button type="button" class="btn_nxt"><a href="dashboard_client.html">Submit</a></button>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <link rel="shortcut icon" type="x-icon" href="../RESOURCES/center_logo.png">
+    
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+    body{
+   background-image: url('../RESOURCES/bg_skill.jpg');
+   background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.forms-body{
+    color: white;
+    font-size: 15px;
+    padding: 50px;
+  }
+.form button {
+    border: none;
+    background: none;
+    color: #8b8ba7;
+  }
+  
+  .form_div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  gap: 400px;
+  }
+  .btn_back{
+    border: solid 1px white;
+    border-radius: 10px;
+    height: 50px;
+    color: white;
+    width: 200px;
+    cursor: pointer;
+    background: transparent;
+  }
+  .btn_nxt{
+    cursor: pointer;
+    border-radius: 10px;
+    height: 50px;
+    border:none;
+    color: white;
+    width: 200px;
+    background: #fbaf03;
+  }
+  .btn{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    gap: 100px;
+
+  }
+  .btn a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+  }
+  /* From uiverse.io by @satyamchaudharydev */
+/* removing default style of button */
+
+.form button {
+  border: none;
+  background: none;
+  color: #8b8ba7;
+}
+/* styling of whole input container */
+.form {
+  --timing: 0.3s;
+  --width-of-input: 200px;
+  --height-of-input: 40px;
+  --border-height: 2px;
+  --input-bg: #fff;
+  --border-color: #fbaf03;
+  --border-radius: 30px;
+  --after-border-radius: 1px;
+  position: relative;
+  width: 500px;
+  height:50px;
+  display: flex;
+  align-items: center;
+  padding-inline: 0.8em;
+  border-radius: var(--border-radius);
+  transition: border-radius 0.5s ease;
+  background: var(--input-bg,#fff);
+}
+/* styling of Input */
+.input {
+  font-size: 0.9rem;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  padding-inline: 0.5em;
+  padding-block: 0.7em;
+  border: none;
+}
+/* styling of animated border */
+.form:before {
+  content: "";
+  position: absolute;
+  background: var(--border-color);
+  transform: scaleX(0);
+  transform-origin: center;
+  width: 100%;
+  height: var(--border-height);
+  left: 0;
+  bottom: 0;
+  border-radius: 1px;
+  transition: transform var(--timing) ease;
+}
+/* Hover on Input */
+.form:focus-within {
+  border-radius: var(--after-border-radius);
+}
+
+input:focus {
+  outline: none;
+}
+/* here is code of animated border */
+.form:focus-within:before {
+  transform: scale(1);
+}
+/* styling of close button */
+/* == you can click the close button to remove text == */
+.reset {
+  border: none;
+  background: none;
+  opacity: 0;
+  visibility: hidden;
+}
+/* close button shown when typing */
+input:not(:placeholder-shown) ~ .reset {
+  opacity: 1;
+  visibility: visible;
+}
+/* sizing svg icons */
+.form svg {
+  width: 17px;
+  margin-top: 3px;
+}
+  
+.category{
+display: grid;
+grid-template-columns: auto auto auto;
+justify-content: center;
+
+}
+.category .button {
+	border-radius: 5px;
+	background: rgba(255,255,255,0.1);
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+	border: 1px solid rgba(255,255,255,0.05);
+	border: 1px solid rgba(15,24,31,0.05);
+	color: white;
+	padding: 10px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 15px;
+	margin: 4px 2px;
+	cursor: pointer;
+  }  
+</style>
+
+</head>
+<body>
+    <div class="forms-body">
+        <div class="form_div">
+          <div></div>
+            <div class="form-contain">
+              <center>
+                <img src="../RESOURCES/choice.png" width="300px">
+                <p style="font-size: 30px; font-weight: 800; color: #fbaf03;">Skills</p>
+              </center>
+                <p style="font-weight: 700;  margin-bottom:10px;">Search skill or add your own</p>
+                <form class="form">
+                    <button>
+                        <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="search">
+                            <path d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9" stroke="currentColor" stroke-width="1.333" stroke-linecap="round" stroke-linejoin="round"></path>
+                        </svg>
+                    </button>
+                    <input class="input" placeholder="Type your text" required="" type="text">
+                    <button class="reset" type="reset">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </form>
+                <br>
+                
+                <div class="category" >
+                
+                    <a href="" class="button">Designer</a>
+                    <a href="" class="button">UI/UX Designer</a>
+                    <a href="" class="button">Power Point Creator</a>
+                    <a href="" class="button">Teacher</a>
+                    <a href="" class="button">Developer</a>
+                    <a href="" class="button">Data Analyst</a>
+                    <a href="" class="button">Content Creator</a>
+                    <a href="" class="button">Advertisement</a>
+                    <a href="" class="button">Engineer</a>
+                    <a href="" class="button">Business Analyst</a>
+                    <a href="" class="button">Call Center</a>
+                    <a href="" class="button">Virtual Assistance</a>
+                
+                </div>
+            
+                <div class="btn">
+                    <button type="button" class="btn_back"><a href="headline.html">Back</a></button>
+                    <button type="button" class="btn_nxt"><a href="scope.html">Next</a></button>
+                </div>
+            </div>
+        </div> 
+    </div>
+</body>
+</html>
